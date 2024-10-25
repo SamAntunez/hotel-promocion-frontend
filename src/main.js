@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router'; // Asegúrate de importar el enrutador
 
-createApp(App).mount('#app')
+createApp(App)
+  .use(router) // Añade el enrutador
+  .mount('#app');
+        
